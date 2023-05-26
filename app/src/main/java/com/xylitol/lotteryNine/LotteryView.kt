@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
  * @Date 2020-11-26 15:47
  * @Desc 继承RecyclerView完成一个3X3的抽奖转盘
  */
-class LuckyDrawView @JvmOverloads constructor(
+class LotteryView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : RecyclerView(context, attrs, defStyleAttr) {
 
@@ -24,7 +24,7 @@ class LuckyDrawView @JvmOverloads constructor(
     private var oldIndex = 0
     private var mLotteryListener: LotteryListener? = null
 
-    private var mAdapter: LuckyDrawAdapter? = null
+    private var mAdapter: LotteryRecyclerAdapter? = null
 
     init {
         animator.duration = 4000
@@ -54,9 +54,9 @@ class LuckyDrawView @JvmOverloads constructor(
      * 传入后台数据
      * @param data 后台数据、传入到adapter中去
      */
-    fun setAdapterAndListener(data: Any,lotteryListener: LotteryListener) {
+    fun setDataAndListener(data: Any, lotteryListener: LotteryListener) {
         mLotteryListener = lotteryListener
-        mAdapter = LuckyDrawAdapter(mLotteryListener!!/*,data*/)
+        mAdapter = LotteryRecyclerAdapter(mLotteryListener!!/*,data*/)
         this.adapter = mAdapter
     }
 

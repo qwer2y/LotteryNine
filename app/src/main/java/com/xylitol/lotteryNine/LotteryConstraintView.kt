@@ -19,7 +19,7 @@ import com.xylitol.lotteryNine.MainActivity.Companion.iconArray
  * @Date 2020-11-26 18:53
  * @Desc 使用ConstraintLayout实现九宫格
  */
-class LuckyDrawConstraintView @JvmOverloads constructor(
+class LotteryConstraintView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : ConstraintLayout(context, attrs, defStyleAttr) {
 

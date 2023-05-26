@@ -14,8 +14,8 @@ import com.xylitol.lotteryNine.MainActivity.Companion.iconArray
  * @Date 2020-11-26 15:52
  * @Desc 抽奖转盘的适配器
  */
-class LuckyDrawAdapter(var onClick: LuckyDrawView.LotteryListener) :
-    RecyclerView.Adapter<LuckyDrawAdapter.LuckyDrawItem>() {
+class LotteryRecyclerAdapter(var onClick: LotteryView.LotteryListener) :
+    RecyclerView.Adapter<LotteryRecyclerAdapter.LuckyDrawItem>() {
 
     var posMap =
         mapOf<Int, Int>(0 to 0, 1 to 1, 2 to 2, 3 to 7, 4 to 8, 5 to 3, 6 to 6, 7 to 5, 8 to 4)
@@ -68,7 +68,7 @@ class LuckyDrawAdapter(var onClick: LuckyDrawView.LotteryListener) :
         return -1
     }
 
-    class LuckyDrawItem(itemView: View, var onClick: LuckyDrawView.LotteryListener) :
+    class LuckyDrawItem(itemView: View, var onClick: LotteryView.LotteryListener) :
         RecyclerView.ViewHolder(itemView) {
         //这里做一个映射，将真实位置和抽奖机位置进行映射
 

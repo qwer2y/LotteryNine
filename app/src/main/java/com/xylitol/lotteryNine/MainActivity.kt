@@ -21,26 +21,26 @@ class MainActivity : AppCompatActivity() {
         )
     }
 
-    private var mLuckyDrawView: LuckyDrawView? = null
+    private var mLotteryView: LotteryView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        mLuckyDrawView = findViewById(R.id.ldv_top)
+        mLotteryView = findViewById(R.id.ldv_top)
 
 
         //data 传入后台给的抽奖数据
-        mLuckyDrawView?.setAdapterAndListener("", object : LuckyDrawView.LotteryListener {
+        mLotteryView?.setDataAndListener("", object : LotteryView.LotteryListener {
             override fun onClickLottery() {
                 //点击开始抽奖调用抽奖接口后开始抽奖动画
                 val result = Random.nextInt(0, 7) //模拟抽奖接口
-                mLuckyDrawView?.startLottery(result)
+                mLotteryView?.startLottery(result)
             }
 
             override fun onEnd() {
                 //结束后恢复原样
                 Handler(Looper.getMainLooper()).postDelayed({
-                    mLuckyDrawView?.resetLottery()
+                    mLotteryView?.resetLottery()
                 }, 2000L)
             }
         })
