@@ -1,4 +1,4 @@
-package com.xylitol.luckydraw
+package com.xylitol.lotteryNine
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter

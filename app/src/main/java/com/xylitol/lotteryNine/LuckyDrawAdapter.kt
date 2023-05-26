@@ -1,4 +1,4 @@
-package com.xylitol.luckydraw
+package com.xylitol.lotteryNine
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.xylitol.luckydraw.MainActivity.Companion.iconArray
+import com.xylitol.lotteryNine.MainActivity.Companion.iconArray
 
 
 /**

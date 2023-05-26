@@ -1,4 +1,4 @@
-package com.xylitol.luckydraw
+package com.xylitol.lotteryNine
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -12,7 +12,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.xylitol.luckydraw.MainActivity.Companion.iconArray
+import com.xylitol.lotteryNine.MainActivity.Companion.iconArray
 
 /**
  * @Author zlm

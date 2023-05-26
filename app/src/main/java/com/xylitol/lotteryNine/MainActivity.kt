@@ -1,4 +1,4 @@
-package com.xylitol.luckydraw
+package com.xylitol.lotteryNine
 
 import android.os.Bundle
 import android.os.Handler
